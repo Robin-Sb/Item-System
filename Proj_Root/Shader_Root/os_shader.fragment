@@ -1,0 +1,11 @@
+#version 400
+
+layout(location = 0) out vec4 diffuseColor;
+
+precision mediump float;
+uniform vec4 cube_colour;
+out vec4 colors;
+
+void main() {
+  colors = cube_colour;
+}

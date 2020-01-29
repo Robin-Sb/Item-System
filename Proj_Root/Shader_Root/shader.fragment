@@ -1,0 +1,12 @@
+#version 400
+
+in vec4 vertex_colors;
+in vec2 tex_coordinates0;
+
+uniform sampler2D main_texture;
+
+out vec4 colors;
+
+void main() {
+  colors = texture(main_texture, tex_coordinates0);
+  }

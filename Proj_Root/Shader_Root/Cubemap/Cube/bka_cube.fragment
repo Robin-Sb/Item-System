@@ -1,0 +1,11 @@
+#version 400
+
+in vec3 tex_coordinates;
+
+uniform samplerCube box_texture;
+
+out vec4 colors;
+
+void main() {
+  colors = texture(box_texture, tex_coordinates);
+}

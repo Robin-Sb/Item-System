@@ -1,0 +1,11 @@
+#version 400
+
+in vec3 texture_coordinates;
+
+uniform samplerCube dome_texture;
+
+out vec4 colors;
+
+void main() {
+  colors = texture(dome_texture, texture_coordinates);
+}
